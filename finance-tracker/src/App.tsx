@@ -1,7 +1,7 @@
 import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 import "./App.css";
-import Login from "./components/login";
-import { Dashboard } from "./components/dashboard";
+import Login from "./components/Login";
+import { Dashboard } from "./components/Dashboard";
 import PrivateRoute from "./utils/auth";
 
 function App() {
