@@ -10,9 +10,10 @@ import {
 import React from "react";
 import MenuIcon from "@mui/icons-material/Menu";
 import LogoutIcon from "@mui/icons-material/Logout";
+import { useNavigate } from "react-router-dom";
 export function Header() {
   const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
-
+const navigate = useNavigate();
   const handleMenu = (event: React.MouseEvent<HTMLElement>) => {
     setAnchorEl(event.currentTarget);
   };
@@ -20,6 +21,11 @@ export function Header() {
   const handleClose = () => {
     setAnchorEl(null);
   };
+
+  const handleLogout = () => {
+    localStorage.removeItem("authToken");
+    navigate("/");
+  }
   return (
     <>
       <AppBar>
@@ -70,7 +76,7 @@ export function Header() {
               <span>Profile</span>
             </MenuItem>
             <MenuItem
-              onClick={handleClose}
+              onClick={handleLogout}
               sx={{ display: "flex", gap: "10px" }}
             >
               <LogoutIcon />

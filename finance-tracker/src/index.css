@@ -66,3 +66,23 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+.login-container {
+  background-image: url("./assets/bg.avif");
+  height: 100vh;
+  width: 100vw;
+  background-size: cover;
+}
+.loginBtn {
+  background: linear-gradient(to right, #ff416c, #ff4b2b);
+  padding: 12px !important;
+}
+.loginBtn:hover {
+  box-shadow: 0 0 10px rgba(255, 99, 71, 0.8);
+  transform: scale(1.05);
+}
+.dashboard-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
