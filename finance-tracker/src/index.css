@@ -67,22 +67,31 @@ button:focus-visible {
   }
 }
 .login-container {
-  background-image: url("./assets/bg.avif");
+  background-image: url("./assets/bg.jpg");
   height: 100vh;
   width: 100vw;
   background-size: cover;
+  display: flex;
+  align-items: center;
 }
-.loginBtn {
-  background: linear-gradient(to right, #ff416c, #ff4b2b);
+.login-btn {
+  background: linear-gradient(to left, #ff416c, #ff4b2b);
   padding: 12px !important;
 }
-.loginBtn:hover {
-  box-shadow: 0 0 10px rgba(255, 99, 71, 0.8);
-  transform: scale(1.05);
+.signup-btn {
+  background: linear-gradient(to right, blue, #ff4b2b);
+  padding: 12px !important;
 }
 .dashboard-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
+}
+.login-box {
+  backdrop-filter: blur(15px);
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  border: 1px solid cyan;
+  padding: 2rem;
 }
