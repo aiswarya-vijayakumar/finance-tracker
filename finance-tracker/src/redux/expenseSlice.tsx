@@ -1,5 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { expenseData } from "../components/shared/constants/shared.constants";
+import { expenseData } from "../shared/constants/shared.constants";
 
 const initialState = expenseData;
 

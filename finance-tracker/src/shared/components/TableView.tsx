@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { addExpense, deleteExpense } from "../../../redux/expenseSlice.tsx";
+import { addExpense, deleteExpense } from "../../redux/expenseSlice.tsx";
 import {
   Table,
   TableBody,
